@@ -16,7 +16,17 @@ window.addEventListener("load", function() {
     document.querySelector("personInput").innerText = personInput;
     document.querySelector("animal").innerText = animal;
     document.querySelector("food").innerText = food;
-    
+
+    result.removeAttribute("class");
     e.preventDefault();
+  });
+
+  form.addEventListener("submit", function() {
+    resetBtn.removeAttribute("class");
+  });
+
+  resetBtn.addEventListener("click", function() {
+    result.setAttribute("class", "hidden");
+    
   }
 }
