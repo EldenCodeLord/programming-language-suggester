@@ -25,20 +25,48 @@
   border-style: groove;
   border-width: 25px;;
   text-align: center;
+  padding: 12px;
 }
 
 h2 {
   color: rgb(4, 188, 4);
   font-family: Impact;
   text-align: center;
+  background-color:  rgb(59, 15, 99);
   border-style: groove;
   border-color: aqua;
   border-radius: 16px;
   border-width: 17px;
   display: inline;
   padding-inline: 12px;
+  padding: 9px;
+  margin: 400px;
+  opacity: 85%;
 }
 
 #si {
   color: rgb(197, 23, 171); 
+}
+
+.mgla {
+  color: rgb(4, 188, 4);
+  font-family: Impact;
+  font-size: 33px;
+  border-color: aqua;
+  background-color:  rgb(59, 15, 99);
+  opacity: 85%;
+  border-style: groove;
+  border-radius: 20px;
+  border-style: groove;
+  border-width: 25px;;
+  text-align: center;
+  padding: 12px;
+  box-sizing: content-box;
+}
+
+h1 {
+  color:rgb(4, 188, 4);
+  font-family: Impact;
+  font-size: 50px;
+  text-shadow: -10px 10px 0px black;
 }
