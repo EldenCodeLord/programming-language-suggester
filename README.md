@@ -18,7 +18,7 @@ _An informative webpage that will take a user's input and return a coding langua
 
 ## Setup/Installation Requirements
 
-* _Clone thi repository to your desktop._
+* _Clone this repository to your desktop._
 * _Navigate to the top level of your directory._
 * _Open index.html in your browswer._
 
