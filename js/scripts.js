@@ -7,13 +7,13 @@ window.addEventListener("load", function() {
   let resetBtn = document.querySelector("button#reset");
   let result = document.querySelector("div#result");
 
-  form.addEventListener("submit", function() {
-    const personInput = document.getElementById("personInput").value;
+  form.addEventListener("submit", function(e) { 
+    const nameInput = document.getElementById("nameInput").value;
     const animal = document.getElementById("animal").value;
     const food = document.getElementById("food").value;
 
 
-    document.querySelector("personInput").innerText = personInput;
+    document.querySelector("nameInput").innerText = nameInput;
     document.querySelector("animal").innerText = animal;
     document.querySelector("food").innerText = food;
 
@@ -27,6 +27,8 @@ window.addEventListener("load", function() {
 
   resetBtn.addEventListener("click", function() {
     result.setAttribute("class", "hidden");
-    
-  }
-}
+    document.getElementById("nameInput").value = null;
+    document.getElementById("animal").value = null;
+    document.getElementById("food").value = null;
+  });
+});
