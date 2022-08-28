@@ -1,6 +1,14 @@
 //Business Logic:
 
+
 //User Interface Logic:
+
+function hideResult() {
+  document.getElementById("html").setAttribute("class", "hidden");
+  document.getElementById("css").setAttribute("class", "hidden");
+  document.getElementById("js").setAttribute("class", "hidden");
+}
+
 
 window.addEventListener("load", function() {
   let form = document.querySelector("form");
@@ -31,4 +39,5 @@ window.addEventListener("load", function() {
     document.getElementById("animal").value = null;
     document.getElementById("food").value = null;
   });
+
 });

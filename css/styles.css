@@ -70,3 +70,7 @@ h1 {
   font-size: 50px;
   text-shadow: -10px 10px 0px black;
 }
+
+.hidden {
+  display: none;
+}
