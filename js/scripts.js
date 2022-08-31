@@ -7,7 +7,14 @@ function hideResult() {
   document.getElementById("html").setAttribute("class", "hidden");
   document.getElementById("css").setAttribute("class", "hidden");
   document.getElementById("js").setAttribute("class", "hidden");
-}
+
+resetBtn.addEventListener("click", function() {
+  result.setAttribute("class", "hidden");
+  document.getElementById("nameInput").value = null;
+  document.getElementById("animal").value = null;
+  document.getElementById("food").value = null;
+  document.getElementById("what").value = null;
+  document.getElementById("hobby").value = null;
 
 
 window.addEventListener("load", function() {
@@ -17,11 +24,9 @@ window.addEventListener("load", function() {
 
   form.addEventListener("submit", function() { 
     const nameInput = document.getElementById("nameInput").value;
-    const animal = document.getElementById("animal").value;
-    const food = document.getElementById("food").value;
-    const pizza = document.getElementById("js", "food").value;
-    const cat = document.getElementById("css", "animal").value;
-    const dog = document.querySelector("html", "animal").value;
+    const fish = document.getElementById("js").value;
+    const cat = document.getElementById("css").value;
+    const dog = document.getElementById("html").value;
       if (dog === "html" && Dog === "html") {
         html.removeAttribute("class", "hidden");
       } else if (cat === "css" && Cat === "css"){
@@ -37,13 +42,6 @@ window.addEventListener("load", function() {
   form.addEventListener("submit", function() {
     resetBtn.removeAttribute("class");
   });
-
-  resetBtn.addEventListener("click", function() {
-    result.setAttribute("class", "hidden");
-    document.getElementById("nameInput").value = null;
-    document.getElementById("animal").value = null;
-    document.getElementById("food").value = null;
-    document.getElementById("what").value = null;
-    document.getElementById("hobby").value = null;
-  });
 });
+});
+}
