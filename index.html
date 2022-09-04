@@ -14,37 +14,33 @@
       <input id="nameInput" type="text" name="nameInput"><br>
       <label for="what">What sparked your interest in coding?</label>
       <input id="what" type="text" name="what"><br>
-      <p>What is your favorite animal? (Choose one!)</p>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="cat" value="option1">
-        <label class="form-check-label" for="inlineCheckbox1">Cat</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="dog" value="option2">
-        <label class="form-check-label" for="inlineCheckbox2">Dog</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="checkbox" id="fish" value="option3">
-        <label class="form-check-label" for="inlineCheckbox3">Fish</label>
-      </div>
       <label for="hobby">What is your hobby?</label>
       <input id="hobby" type="text" name="hobby"><br>
       <label for="food">Do you like pizza?</label>
       <input id="food" type="text" name="food"><br>
+      </form>
+    <p class="mgla">What is your favorite animal? (Choose one!)</p>
+      <form id="radio-form" class="mgla">
+      <input type="radio" name="animal" value="cat" id="animal1" checked>
+      <label for="cat">Cat</label><br>
+      <input type="radio" name="animal" value="dog" id="animal2">
+      <label for="dog">Dog</label><br>
+      <input type="radio" name="animal" value="fish" id="animal3">
+      <label for="fish">Fish</label><br>
       <button type="submit">Give me Suggestions!</button>
       <button type="button" id="reset">Reset</button>
-    </form>
+      </form>
+
   <div id="result" class="hidden">
     <h1>Check it out!</h1>
-  <div id="html" class="hidden">
-    <p><span id="name">___</span>, you should give HTML a go! I highly recommend  this as a starter! Once you get the hang of it, you will be building web apps in no time!!</p>
-  <div id="css" class="hidden">
-    <p><span id="name">___</span>, CSS is another good coding language. With CSS you can style your HTML page. They go hand in hand!</p>
-  <div id="js" class="hidden">
-    <p><span id="name">___</span>, JavaScript is a powerful coding language. It can add interactivity to your websites as well as run back-end frameworks!</p>
-    </div> 
-    </div> 
+    <div id="html">
+    <p class="mgla"><span id="nameInput" class="html">___</span>, you should give HTML a go! I highly recommend  this as a starter! Once you get the hang of it, you will be building web apps in no time!!</p>
     </div>
+    <div id="css">
+    <p class="mgla"><span id="nameInput" class="css">___</span>, CSS is another good coding language. With CSS you can style your HTML page. They go hand in hand!</p>
+    </div>
+    <div id="js">
+    <p class="mgla"><span id="nameInput" class="js">___</span>, JavaScript is a powerful coding language. It can add interactivity to your websites as well as run back-end frameworks!</p>
     </div>
   </body>
 </html>
